@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Projects from "./Projects";
 
 // class RegularClass{}
 
@@ -11,9 +12,17 @@ import React, { Component } from "react";
 // console.log("componentClassInstance", componentClassInstance);
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = { displayedBio: false };
+    state = {displayedBio : false} // not using this, because not in constructor
+
+    // constructor() {
+    //     super();
+    //     this.state = { displayedBio: false };
+
+    //     this.toggleDsiplayBio = this.toggleDsiplayBio.bind(this);
+    // }
+
+    toggleDsiplayBio = ()=> {
+        this.setState({ displayedBio : !this.state.displayedBio})
     }
 
     render() {
@@ -22,8 +31,11 @@ class App extends Component {
                 <p>I Live in San Francisco, and code every daya</p>
                 <p>My Favorite language is Javascript and Goalng, and i thing React.js is awesome</p>
                 <p>Besides Coding, i also love music and Ramen :D</p>
+                <button onClick={this.toggleDsiplayBio}>Show Less</button>
             </div>
-        ) : null;
+        ) : (<div>
+            <button onClick={this.toggleDsiplayBio}>Read More</button>
+        </div>);
 
         return (
             <div>
@@ -31,6 +43,8 @@ class App extends Component {
                 <p>My name is Khalil. I'm a software engineer</p>
                 <p>I'm always looking forward to working on meaningful projects</p>
                 {bio}
+                <hr />
+                <Projects />
             </div>
         )
     }
