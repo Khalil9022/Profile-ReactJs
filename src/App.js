@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
+import profile from './assets/profile.jpg'
 
 // class RegularClass{}
 
@@ -40,6 +41,7 @@ class App extends Component {
 
         return (
             <div>
+                <img src={profile} alt='profile' className="profile" />
                 <h1>Helo!</h1>
                 <p>My name is Khalil. I'm a software engineer</p>
                 <p>I'm always looking forward to working on meaningful projects</p>
