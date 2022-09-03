@@ -3,8 +3,6 @@ import PROJECTS from "./data/projects";
 
 class Project extends Component {
     render () {
-        console.log('this.props', this.props)
-
         const { title, description, link, image } = this.props.project;
 
         return (
@@ -12,7 +10,7 @@ class Project extends Component {
                 <h3>{title}</h3>
                 <img src={image} alt="profile" style={{ width: 200, height: 120 }}/>
                 <p>{description}</p>
-                <a href="{link}">{link}</a>
+                <a href={link}>{link}</a>
             </div>
         )
     }
