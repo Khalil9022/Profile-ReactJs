@@ -5,24 +5,24 @@ import twitterIcon from '../assets/twitter_icon.png'
 
 const SOCIAL_PROFILES = [
     {
-        id:1,
-        link : 'mailto:khalilattalla9022@gmail.com',
-        image : emailIcon
+        id: 1,
+        link: 'mailto:khalilattalla9022@gmail.com',
+        image: emailIcon
     },
     {
-        id:2,
-        link : 'https://github.com/khalil9022',
-        image : githubIcon
+        id: 2,
+        link: 'https://github.com/khalil9022',
+        image: githubIcon
     },
     {
-        id:3,
-        link : 'https://linkedin.com',
-        image : linkedinIcon
+        id: 3,
+        link: 'https://linkedin.com',
+        image: linkedinIcon
     },
     {
-        id:1,
-        link : 'https://twitter.com',
-        image : twitterIcon
+        id: 4,
+        link: 'https://twitter.com',
+        image: twitterIcon
     },
 ]
 

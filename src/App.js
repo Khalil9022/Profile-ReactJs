@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import profile from './assets/profile.jpg'
+import Title from './Title'
 
 // class RegularClass{}
 
@@ -14,7 +15,7 @@ import profile from './assets/profile.jpg'
 // console.log("componentClassInstance", componentClassInstance);
 
 class App extends Component {
-    state = {displayedBio : false} // not using this, because not in constructor
+    state = { displayedBio: false } // not using this, because not in constructor
 
     // constructor() {
     //     super();
@@ -23,8 +24,8 @@ class App extends Component {
     //     this.toggleDsiplayBio = this.toggleDsiplayBio.bind(this);
     // }
 
-    toggleDsiplayBio = ()=> {
-        this.setState({ displayedBio : !this.state.displayedBio})
+    toggleDsiplayBio = () => {
+        this.setState({ displayedBio: !this.state.displayedBio })
     }
 
     render() {
@@ -43,7 +44,9 @@ class App extends Component {
             <div>
                 <img src={profile} alt='profile' className="profile" />
                 <h1>Helo!</h1>
-                <p>My name is Khalil. I'm a software engineer</p>
+                <p>My name is Khalil.</p>
+                {/* {this.state.displayedBio ? <Title /> : null} */}
+                <Title />
                 <p>I'm always looking forward to working on meaningful projects</p>
                 {bio}
                 <hr />
