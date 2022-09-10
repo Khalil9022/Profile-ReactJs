@@ -5,7 +5,12 @@ import './index.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
+setTimeout(() => {
+    console.log('Bears');
+}, 2000);
 
+console.log('Beets');
+console.log('Battlestar Glactica');
 
 // class Animal {
 //     constructor (name, age){
