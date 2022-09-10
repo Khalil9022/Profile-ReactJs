@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
-import profile from './assets/profile.jpg'
 import Title from './Title'
+import TestApi from "./TestApi";
+import profile from '../assets/profile.jpg'
 
 // class RegularClass{}
 
@@ -53,6 +54,8 @@ class App extends Component {
                 <Projects />
                 <hr />
                 <SocialProfiles />
+                <hr />
+                <TestApi />
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
 import './index.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))
@@ -31,7 +31,7 @@ ReactDOM.render(<App />, document.getElementById('root'))
 //     }
 
 //     roar(){
-//         console.log("ROOOOAR !! I have", 
+//         console.log("ROOOOAR !! I have",
 //         this.furColor, " Fur, and i can run",
 //         this.speed, "miles an hour");
 //     }
