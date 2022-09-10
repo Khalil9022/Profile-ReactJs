@@ -5,12 +5,19 @@ import './index.css'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
-setTimeout(() => {
-    console.log('Bears');
-}, 2000);
+// new Promise((reslove, reject) => {
+//     return reject(new Error('no Bears'))
 
-console.log('Beets');
-console.log('Battlestar Glactica');
+//     setTimeout(() => {
+//         // console.log('Bears');
+//         reslove('Bears,Beets, Battlestar Glatica')
+//     }, 2000);
+// })
+//     .then(quote => {
+//         console.log(quote);
+//     })
+//     .catch(error => console.log('error', error))
+
 
 // class Animal {
 //     constructor (name, age){

@@ -20,12 +20,14 @@ class TestApi extends Component {
             .then(response => response.json())
             // .then(json => console.log('json', json))
             .then(json => this.setState({ joke: json }))
+            .catch(error => alert(error.message))
     }
 
     fetchApi = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(json => this.setState({ jokes: json }))
+            .catch(error => alert(error.message))
     }
 
     render() {
