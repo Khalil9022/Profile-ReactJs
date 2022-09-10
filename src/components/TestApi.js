@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "./Header";
+// import Header from "./Header";
 
 const Joke = ({ joke: { title, body } }) => {
     // const { title, body } = joke
@@ -34,7 +34,7 @@ class TestApi extends Component {
     render() {
         return (
             <div>
-                <Header />
+                {/* <Header /> */}
                 <h2>Highlighted Title</h2>
                 <Joke joke={this.state.joke} />
                 <hr />

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from './Title'
-import Header from "./Header";
+// import Header from "./Header";
 // import TestApi from "./TestApi";
 import profile from '../assets/profile.jpg'
 
@@ -44,7 +44,7 @@ class App extends Component {
 
         return (
             <div>
-                <Header />
+                {/* <Header /> */}
                 <img src={profile} alt='profile' className="profile" />
                 <h1>Helo!</h1>
                 <p>My name is Khalil.</p>
@@ -62,5 +62,11 @@ class App extends Component {
         )
     }
 }
+
+// const AppWithHeader = () => {
+//     return (
+//         <Header Component={App} />
+//     )
+// }
 
 export default App;

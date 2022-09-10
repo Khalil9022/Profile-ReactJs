@@ -4,6 +4,7 @@ import { Router, Switch, Route } from 'react-router-dom'
 import createBrowserHistory from "history/createBrowserHistory";
 import App from './components/App';
 import TestApi from "./components/TestApi";
+import Header from "./components/Header";
 import './index.css'
 
 const history = createBrowserHistory()
@@ -11,10 +12,12 @@ const history = createBrowserHistory()
 ReactDOM.render(
     <Router history={history}>
         <Switch>
-            <Route exact path='/' component={App}></Route>
-            <Route path='/testapi' component={TestApi}></Route>
+            <Route exact path='/' render={() => <Header><App /></Header>} />
+            <Route path='/testapi' render={() => <Header><TestApi /></Header>}></Route>
+            {/* <Route path='/testapi' component={TestApi}></Route> */}
         </Switch>
-    </Router>, document.getElementById('root')
+    </Router>,
+    document.getElementById('root')
 )
 
 // new Promise((reslove, reject) => {
