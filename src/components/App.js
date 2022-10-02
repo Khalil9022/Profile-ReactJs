@@ -34,6 +34,7 @@ class App extends Component {
         const bio = this.state.displayedBio ? (
             <div>
                 <p>I Live in San Francisco, and code every daya</p>
+                <p>I Live in San Francisco, and code every daya</p>
                 <p>My Favorite language is Javascript and Goalng, and i thing React.js is awesome</p>
                 <p>Besides Coding, i also love music and Ramen :D</p>
                 <button onClick={this.toggleDsiplayBio}>Show Less</button>
